@@ -1,7 +1,6 @@
 import org.apache.log4j.AppenderSkeleton;
 import org.apache.log4j.Layout;
 import org.apache.log4j.spi.LoggingEvent;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -47,21 +46,22 @@ public class MyAppender extends AppenderSkeleton{
         }
 
         public List<String> getEventStrings() {
-            List<String> eventstrings = getCurrentLogs().stream().map(loggingEvent -> this.layout.format(loggingEvent)).collect(Collectors.toList());
+            List<String> eventstrings = getCurrentLogs().stream().map(event -> this.layout.format(event)).collect(Collectors.toList());
             List<String> EventStrings = Collections.unmodifiableList(eventstrings);
             return EventStrings;
         }
 
         public void printlogs() {
             List<String> eventstrings = getEventStrings();
-            for (String event:eventstrings) {
-                System.out.println(event);
+            for (String event1:eventstrings) {
+                System.out.println(event1);
         }
             eventsList.clear();
 
         }
 
         //2
+        @Override
         public void close() {
             Arraylist = null;
             GetDiscardedLogCount = 0;
@@ -70,9 +70,47 @@ public class MyAppender extends AppenderSkeleton{
         }
 
         //3
+        @Override
         public boolean requiresLayout() {
             return false;
         }
+
+
+    @Override
+    public Layout getLayout() {
+        return layout;
+    }
+    @Override
+    public void setLayout(Layout layout) {
+        this.layout = layout;
+    }
+
+    public long getDiscardedLogCount() {
+        return GetDiscardedLogCount;
+    }
+
+    public void setDiscardedLogCount(long GetDiscardedLogCount) {
+        this.GetDiscardedLogCount = GetDiscardedLogCount;
+    }
+
+    public int getMaxsize() {
+        return maxsize;
+    }
+
+    public void setMaxsize(int maxsize) {
+        this.maxsize = maxsize;
+    }
+
+    public List<LoggingEvent> GetCurrentLoggingEventList() {
+        return eventsList;
+    }
+
+    public static void SetCurrentLoggingEventList(List<LoggingEvent> eventsList) {
+        MyAppender.eventsList = eventsList;
+    }
+
+
+
 
 
     }
