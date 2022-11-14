@@ -9,5 +9,8 @@
         <module name="assign251_2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="assign251_2" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,5 +1,6 @@
 import org.apache.log4j.spi.LoggingEvent;
 import org.junit.Test;
+import org.testng.annotations.Test;
 
 
 class VelocityLayoutTest {
