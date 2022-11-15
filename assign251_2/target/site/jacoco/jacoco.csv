@@ -1,0 +1,6 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+assign251_2,org.example.appender,MemAppender,120,0,12,0,31,0,18,0,12,0
+assign251_2,org.example.layout,VelocityLayout,80,0,0,0,16,0,3,0,3,0
+assign251_2,org.example,MyAppenderTest,39,0,0,0,11,0,3,0,3,0
+assign251_2,org.example,MyAppenderTest.new Runnable() {...},14,0,2,0,4,0,3,0,2,0
+assign251_2,org.example,MyAppenderTest.new Runnable() {...},14,0,2,0,4,0,3,0,2,0

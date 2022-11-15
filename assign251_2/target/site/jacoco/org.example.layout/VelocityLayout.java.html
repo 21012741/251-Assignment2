@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="zh"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>VelocityLayout.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">assign251_2</a> &gt; <a href="index.source.html" class="el_package">org.example.layout</a> &gt; <span class="el_source">VelocityLayout.java</span></div><h1>VelocityLayout.java</h1><pre class="source lang-java linenums">package org.example.layout;
+
+
+import org.apache.log4j.PatternLayout;
+import org.apache.log4j.spi.LoggingEvent;
+import org.apache.velocity.VelocityContext;
+import org.apache.velocity.app.VelocityEngine;
+
+import java.io.StringWriter;
+import java.time.LocalDateTime;
+
+public class VelocityLayout extends PatternLayout {
+
+    private VelocityContext context;
+    private VelocityEngine engine;
+
+
+    public VelocityLayout() {
+<span class="nc" id="L19">        this(DEFAULT_CONVERSION_PATTERN);</span>
+<span class="nc" id="L20">        this.context = new VelocityContext();</span>
+<span class="nc" id="L21">        this.engine = new VelocityEngine();</span>
+<span class="nc" id="L22">    }</span>
+
+    public VelocityLayout(String pattern) {
+<span class="nc" id="L25">        super(pattern);</span>
+<span class="nc" id="L26">    }</span>
+    /**
+     * i.   c (category)
+     * ii.  d (date using the default toString() representation)
+     * iii. m (message)
+     * iv.  p (priority)
+     * v.   t (thread)
+     * vi.  n (line separator)
+     */
+    @Override
+    public String format(LoggingEvent event) {
+<span class="nc" id="L37">        engine.init();</span>
+
+<span class="nc" id="L39">        context.put(&quot;c&quot;, event.getLoggerName());</span>
+<span class="nc" id="L40">        context.put(&quot;d&quot;, LocalDateTime.now().toString());</span>
+<span class="nc" id="L41">        context.put(&quot;m&quot;, event.getMessage());</span>
+<span class="nc" id="L42">        context.put(&quot;p&quot;, event.getLevel().toString());</span>
+<span class="nc" id="L43">        context.put(&quot;t&quot;, event.getThreadName());</span>
+<span class="nc" id="L44">        context.put(&quot;n&quot;, System.lineSeparator());</span>
+
+<span class="nc" id="L46">        StringWriter Writer = new StringWriter();</span>
+
+<span class="nc" id="L48">        engine.evaluate(context, Writer, &quot;&quot;, getConversionPattern());</span>
+<span class="nc" id="L49">        return Writer.toString();</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
