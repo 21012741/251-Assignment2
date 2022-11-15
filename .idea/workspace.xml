@@ -4,46 +4,170 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e5f2085-fd25-4f4a-ae69-e865228b3522" name="变更" comment="" />
+    <list default="true" id="94f377c2-c86f-4551-93c3-bd1ecdd7ddd2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/target" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="2HUrNNzDKE5Pvt88qYYFqTpXxIk" />
+  <component name="ProjectId" id="2HSB6vZi6NNit5lXfA2QkjHaHUK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assign251_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../251Assignment2/assign251_2" />
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.layout" />
+      <recent name="org.example.appender" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test -Dtest=MyAppenderTest -Dmaven.test.failure.ignore=trure verify " />
+      <command value="mvn clean test -Dtest=MemAppenderTest -Dmaven.test.failure.ignore=trure verify " />
+      <command value="mvn clean test -Dtest=MyAppenderTest -Dmaven.test.failure.ignore=true verify " />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MemAppenderTest.getEventStrings">
+    <configuration name="MyAppenderTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.MyAppenderTest" />
+      <module name="assign251_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyAppenderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.MyAppenderTest" />
+      <module name="assign251_2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemAppenderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assign251_2" />
+      <extension name="coverage" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="org.example.appender.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.appender" />
+      <option name="MAIN_CLASS_NAME" value="org.example.appender.MemAppenderTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemAppenderTest.getCurrentLogs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assign251_2" />
+      <extension name="coverage" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="org.example.appender.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.appender" />
+      <option name="MAIN_CLASS_NAME" value="org.example.appender.MemAppenderTest" />
+      <option name="METHOD_NAME" value="getCurrentLogs" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MemAppenderTest.getEventStrings" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="assign251_2" />
+      <extension name="coverage" runner="jacoco">
+        <pattern>
+          <option name="PATTERN" value="org.example.appender.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.appender" />
+      <option name="MAIN_CLASS_NAME" value="org.example.appender.MemAppenderTest" />
+      <option name="METHOD_NAME" value="getEventStrings" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MemAppenderTest.getEventStrings" />
+        <item itemvalue="JUnit.MemAppenderTest.getCurrentLogs" />
+        <item itemvalue="JUnit.MemAppenderTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="默认任务">
-      <changelist id="0e5f2085-fd25-4f4a-ae69-e865228b3522" name="变更" comment="" />
-      <created>1668350464966</created>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="94f377c2-c86f-4551-93c3-bd1ecdd7ddd2" name="Changes" comment="" />
+      <created>1668268435164</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1668350464966</updated>
-      <workItem from="1668350467662" duration="49000" />
+      <updated>1668268435164</updated>
+      <workItem from="1668268437488" duration="19286000" />
+      <workItem from="1668343931122" duration="605000" />
+      <workItem from="1668424271071" duration="2470000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="logger" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/assign251_2$MemAppenderTest_getEventStrings.ic" NAME="MemAppenderTest.getEventStrings Coverage Results" MODIFIED="1668343576733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.appender.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/assign251_2$MemAppenderTest.ic" NAME="MemAppenderTest Coverage Results" MODIFIED="1668344177860" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.appender.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/assign251_2$MemAppenderTest_getCurrentLogs.ic" NAME="MemAppenderTest.getCurrentLogs Coverage Results" MODIFIED="1668343592382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.appender.*</FILTER>
+    </SUITE>
   </component>
 </project>
